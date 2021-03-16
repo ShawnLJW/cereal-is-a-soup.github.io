@@ -12,3 +12,13 @@ My name is Shawn, currently an O Level student. Looking to study Data Science in
 - Top-down shooter inspired by SUPERHOT. Time only moves when you move.
 - Fun gameplay, try to out the hordes of enemies with your abilities.
 - Simplistic but immersive design.
+
+## Leadership
+**Logistics EXCO IC, New Media Club**
+- 2019-2021
+- Oversaw management of CCA equipment
+- Worked with a team to give out and store equipment in a fast-paced environment during school events.
+
+## Achievements
+- [Edusave Scholarship](https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EdusaveScholarship.jpg)
+- [Edusave EAGLES Award](https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EAGLES.jpg)
