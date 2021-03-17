@@ -11,7 +11,7 @@ My name is Shawn, currently an O Level student. Looking to study Data Science in
 ### [Where Has The Time Gone](https://github.com/cereal-is-a-soup/WhereHasTheTimeGone)
 - Top-down shooter inspired by SUPERHOT. Time only moves when you move.
 - Fun gameplay, try to out the hordes of enemies with your abilities.
-- Simplistic but immersive design.
+- Simplistic but immersive design. Easy-to-use UI.
 
 ## Leadership
 **Logistics EXCO IC, New Media Club**
