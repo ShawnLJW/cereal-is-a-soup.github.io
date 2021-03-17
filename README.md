@@ -1,5 +1,5 @@
 # Welcome to my GitHub portfolio!
-My name is Shawn, currently an O Level student. Looking to study Data Science in the future. I seek to understand the things I like, so this page shows some of what I've done to learn data science.
+My name is Shawn, currently an O Level student studying computing and math. Looking to study Data Science in the future. I seek to understand the things I like, so this profile shows some of what I've done to learn.
 
 ## Projects
 ### [Free-response Survey Processing](https://github.com/cereal-is-a-soup/Open-ended-Response-Processing)
