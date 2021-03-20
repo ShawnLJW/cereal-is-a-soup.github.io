@@ -15,9 +15,9 @@ My name is Shawn, currently an O Level student studying computing and math. Look
 
 ## Leadership
 **Logistics EXCO IC, New Media Club**
-- 2019-2021
-- Oversaw management of CCA equipment
-- Worked with a team to give out and store equipment in a fast-paced environment during school events.
+- Responsible for management of CCA equipment, ensuring they are well maintained and not lost.
+- Worked in fast-paced environments such as National Day Parade, Sports Day and more to provide equipment required for operations.
+- Led a team of students.
 
 ## Achievements
 - [Edusave Scholarship](https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EdusaveScholarship.jpg)
