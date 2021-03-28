@@ -4,9 +4,10 @@
 <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="showSlides(1)">
     <header>
         <nav>
             <ul>
@@ -24,7 +25,7 @@
         </div>
     </section>
 
-    <section id="about" class="full">
+    <section id="about" class="full light">
         <div class="toptext">
             <h1>My name is Shawn,</h1>
             <p>
@@ -46,51 +47,62 @@
                 I believe in a practical/hands-on approach to learning, so I've done many projects to improve my skills. For a more detailed explanation of each project, visit the GitHub repository by clicking the header.
             </p>
         </div>
-    </section>
-    <section id="project1" class="full">
-        <div class="center2">
-            <a href="https://github.com/cereal-is-a-soup/Open-ended-Response-Processing"><h1>Free-response Survey Processing</h1></a>
-            <ul>
-                <li>Processed responses from open-ended survey questions to find out where students aspire to progress to for post-secondary education.</li>
-                <li>Used natural language processing to clean responses and tag with categories.</li>
-                <li>Allowed for analysis on a large scale. <strong>1000+ responses over 4 years</strong></li>
-            </ul>
-        </div>
-    </section>
-    <section id="project2" class="full">
-        <div class="center2">
-            <a href="https://github.com/cereal-is-a-soup/WhereHasTheTimeGone"><h1>Where Has The Time Gone</h1></a>
-            <ul>
-                <li>Top-down shooter inspired by SUPERHOT. Time only moves when you move.</li>
-                <li>Fun gameplay, try to out the hordes of enemies with your abilities.</li>
-                <li>Simplistic but immersive design. Easy-to-use UI.</li>
-            </ul>
-        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <a href="https://github.com/cereal-is-a-soup/Survey-Response-Processing"><h1>Survey Response Processing</h1></a>
+                <ul>
+                    <li>Processed 1104 responses from a survey to find out where students aspire to progress to for post-secondary education.</li>
+                    <li>Classified responses of students with an accuracy of 99% by building a machine learning (Bag of Words) model.</li>
+                    <li>Allowed for easy analysis of students' education and career goals on a large scale.</li>
+                </ul>
+            </div>
+          
+            <div class="mySlides">
+                <a href="https://github.com/cereal-is-a-soup/WhereHasTheTimeGone"><h1>Where Has The Time Gone</h1></a>
+                <ul>
+                    <li>Developed a top-down shooter inspired by SUPERHOT.</li>
+                    <li>Designed mechanics for a fun gameplay experience.</li>
+                    <li>Implemented minimalistic and easy-to-use User Interface.</li>
+                </ul>
+            </div>
+            <div class="arrow">
+                <a onclick="plusSlides(-1)">&#10094;</a>
+                <a onclick="plusSlides(1)">&#10095;</a>
+                <br>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+          </div>
     </section>
 
-    <section id="achievements" class="full">
+    <section id="achievements" class="full light">
         <div class="toptext">
             <h1>My achievements</h1>
             <p>
                 Other ways I have been recognised. This section includes awards, leadership roles and competitions.
             </p>
-        <h2>Leadership</h2>
-        <strong>Logistics EXCO IC, New Media Club</strong>
-        <ul>
-            <li>Responsible for management of CCA equipment, ensuring they are well maintained and not lost.</li>
-            <li>Worked in fast-paced environments such as National Day Parade, Sports Day and more to provide equipment required for operations.</li>
-            <li>Led a team of students.</li>
-        </ul>
-        <h2>Competitions</h2>
-        <ul>
-            <li>Google Kickstart 2021</li>
-        </ul>
-        <h2>Awards</h2>
-        <ul>
-            <li><a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EdusaveScholarship.jpg">Edusave Scholarship</a></li>
-            <li><a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EAGLES.jpg">Edusave EAGLES Award</a></li>
-        </ul>
-    </div>
+            <h2>Leadership</h2>
+            <p>I have been a member of the New Media Club (AVA Crew) CCA from 2018 to 2021.</p>
+            <strong>Logistics Committee In Charge</strong>
+            <ul>
+                <li>Responsible for management of CCA equipment, ensuring they are well maintained and not lost.</li>
+                <li>Worked in fast-paced environments such as National Day Parade, Sports Day and more to provide equipment required for operations.</li>
+                <li>Led a team of students.</li>
+            </ul>
+            <h2>Competitions</h2>
+            <ul>
+                <li>Google Kickstart 2021</li>
+            </ul>
+            <h2>Academic Awards</h2>
+            <ul>
+                <li><a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EdusaveScholarship.jpg">Edusave Scholarship</a></li>
+                <li><a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup/main/EAGLES.jpg">Edusave EAGLES Award</a></li>
+                <li><a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup.github.io/main/CWSS_Achievement.jpg">Outstanding Academic Achievement Award</a></li>
+                <li><a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup.github.io/main/CWSS_Improved.jpg">Most Improved Academic Performance Award</a></li>
+            </ul>
+        </div>
     </section>
 
     <footer>2021 Lee Jia Wei, Shawn</footer>
