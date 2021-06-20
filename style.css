@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
 
 html {
-    height: 100vh;
-    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
     scroll-behavior: smooth;
 }
 
 body {
     float: left;
     margin: 0px;
-    height: 100vh;
-    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
     font-family: 'Titillium Web', sans-serif;
     font-size: 2.2vh;
     font-weight: 300;
     text-align: justify;
-    background-image: linear-gradient(100deg, #29333a, #1c2229);
+    background-color: #232C33;
     color: #CED3DC;
 }
 
@@ -81,7 +81,7 @@ section {
 }
 
 .slides {
-    margin: auto;
+    margin: 2vw auto;
     width: 70vh;
     max-width: 90vw;
     -webkit-transition: opacity 0.6s ease-in-out;
@@ -110,7 +110,7 @@ section {
     width: 116px;
     left: 0;
     right: 0;
-    bottom: 4vw;
+    bottom: 1vw;
     margin: 0 auto;
 }
 
@@ -129,20 +129,37 @@ section {
     background-color: #67686b;
 }
 
+.img {
+    position: relative;
+    max-width: 90vw;
+    float: left;
+}
+
 .projects {
-    margin: auto;
-    width: 65%;
+    position: relative;
+    margin:  0 auto 4vh auto;
+    width: 120vh;
+    max-width: 94vw;
+    overflow: auto;
 }
 
 .ptext {
-    text-align: right;
     float: right;
-    width: 50%;
+    text-align: right;
+    width: 50vh;
+    max-width: 90vw;
 }
 
 .pdesc {
     background-color: #181e24;
     padding: 12px;
+}
+
+.plinks {
+    float: right;
+    display: flex;
+    width: 30vh;
+    justify-content: space-evenly;
 }
 
 .school {
@@ -157,4 +174,16 @@ section {
 
 .cwss > * {
     margin: 2px;
+}
+
+@media (max-width: 500px) {
+    .ptext {
+        text-align: center;
+        float: none;
+    }
+
+    .plinks {
+        float: none;
+        margin: auto;
+    }
 }
