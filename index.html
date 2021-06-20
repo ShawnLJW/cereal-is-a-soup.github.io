@@ -8,23 +8,27 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body onload="showSlides()">
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <h1>shawn lee</h1>
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#education">EDUCATION</a>
-                <a class="burger" onclick="expandNav()">&#9776;</a>
-            </nav>
+        <header class="navbar navbar-expand-sm sticky-top navbar-dark">
+            <a href="#" class="navbar-brand" onclick="clearActive()"><h1>shawn lee</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" onclick="activate(0)">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" onclick="activate(1)">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link" onclick="activate(2)">EDUCATION</a>
+                    </li>
+                </ul>
+            </div>
         </header>
-        <div class="dropdown" id="dropdown">
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#education">EDUCATION</a>
-        </div>
         <section id="about">
             <div class="about">
                 <h1>My story so far:</h1>
@@ -88,5 +92,10 @@
                 </div>
             </div>
         </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>

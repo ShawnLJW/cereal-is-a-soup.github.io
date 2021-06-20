@@ -1,4 +1,5 @@
 var slideIndex = 2;
+var activePage = 0;
 var to;
 
 function go_to(n) {
@@ -30,5 +31,19 @@ function expandNav() {
     x.className += " dropdownActive";
   } else {
     x.className = "dropdown";
+  }
+}
+
+var links = document.getElementsByClassName("nav-link");
+
+function activate(i) {
+  links[activePage].className = "nav-link";
+  activePage = i
+  links[i].className = "nav-link active";
+}
+
+function clearActive() {
+  for (var i = 0; i < links.length; i++) {
+    links[i].className = "nav-link";
   }
 }
