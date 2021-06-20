@@ -34,6 +34,7 @@ header {
     -webkit-box-shadow: 0px 10px 22px 1px rgba(24,30,36,1);
     -moz-box-shadow: 0px 10px 22px 1px rgba(24,30,36,1);
     box-shadow: 0px 10px 22px 1px rgba(24,30,36,1);
+    overflow: hidden;
 }
 
 header h1 {
@@ -106,11 +107,12 @@ section {
 }
 
 .dots {
-    position: absolute;
-    width: 116px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vh;
     left: 0;
     right: 0;
-    bottom: 1vw;
+    bottom: 0;
     margin: 0 auto;
 }
 
@@ -119,9 +121,7 @@ section {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 10px;
     border-radius: 50%;
-    display: inline-block;
     transition: background-color 0.6s ease;
 }
 
@@ -164,7 +164,8 @@ section {
 
 .school {
     margin: auto;
-    width: 35%;
+    width: 90vh;
+    max-width: 85vw;
 }
 
 .cwss {
@@ -176,7 +177,7 @@ section {
     margin: 2px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 60vh) {
     .ptext {
         text-align: center;
         float: none;
