@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
 
 html {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     scroll-behavior: smooth;
 }
 
 body {
     float: left;
     margin: 0px;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
+    font-size: 2.2vh;
     font-weight: 300;
     text-align: justify;
     background-image: linear-gradient(100deg, #29333a, #1c2229);
@@ -21,14 +21,14 @@ body {
 
 h1 {
     color: #F9E784;
-    font-size: 40px;
+    font-size: 4.3vh;
 }
 
 header {
     z-index: 15;
     position: fixed;
-    width: 100%;
-    height: 6%;
+    width: 100vw;
+    height: 6.5vh;
     padding: 0;
     background-color: #232C33;
     -webkit-box-shadow: 0px 10px 22px 1px rgba(24,30,36,1);
@@ -42,11 +42,6 @@ header h1 {
     color: #df4e53;
 }
 
-nav {
-    width: 70%;
-    display: inline-block;
-}
-
 nav a {
     font-weight: 600;
     font-size: 25px;
@@ -55,56 +50,50 @@ nav a {
     color: #CED3DC;
 }
 
-nav a:hover {
+nav a:hover{
     color: #6290C3;
 }
 
 a {
-    color: #E56B6F;
+    font-size: 30px;
+    color: #6290C3;
+    text-decoration: none;
     cursor: pointer;
+}
+
+a:hover {
+    color: #CED3DC;
 }
 
 section {
     position: relative;
-    padding-top: 3%;
-    height: 94%;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 9vh;
 }
 
 .about {
     margin: auto;
-    width: 35%;
-    height: 55%;
-    padding: 0 2% 0 15%;
+    width: 95vh;
+    max-width: 95vw;
+    padding: 2vh 4vw 4vh 12vw;
     background-color: #181e24;
-}
-
-.projects {
-    margin: auto;
-    width: 75%;
-}
-
-.school {
-    margin: auto;
-    width: 35%;
-}
-
-.cwss {
-    background-color: #181e24;
-    padding: 5% 4%;
-}
-
-.cwss > * {
-    margin: 2px;
 }
 
 .slides {
-    position: absolute;
-    left: 35%;
-    width: 30%;
+    margin: auto;
+    width: 70vh;
+    max-width: 90vw;
     -webkit-transition: opacity 0.6s ease-in-out;
     -moz-transition: opacity 0.6s ease-in-out;
     -o-transition: opacity 0.6s ease-in-out;
     transition: opacity 0.6s ease-in-out;
+}
+
+.absolute {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hidden {
@@ -118,8 +107,11 @@ section {
 
 .dots {
     position: absolute;
-    top: 90%;
-    left: 45%;
+    width: 116px;
+    left: 0;
+    right: 0;
+    bottom: 4vw;
+    margin: 0 auto;
 }
 
 .dot {
@@ -135,4 +127,34 @@ section {
 
 .dot:hover, .active {
     background-color: #67686b;
+}
+
+.projects {
+    margin: auto;
+    width: 65%;
+}
+
+.ptext {
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+
+.pdesc {
+    background-color: #181e24;
+    padding: 12px;
+}
+
+.school {
+    margin: auto;
+    width: 35%;
+}
+
+.cwss {
+    background-color: #181e24;
+    padding: 5% 4%;
+}
+
+.cwss > * {
+    margin: 2px;
 }
