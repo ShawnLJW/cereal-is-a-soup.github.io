@@ -23,3 +23,12 @@ function showSlides() {
   dots[slideIndex-1].classList.add("active");
   to = setTimeout(showSlides, 15000);
 }
+
+function expandNav() {
+  var x = document.getElementById("dropdown");
+  if (x.className === "dropdown") {
+    x.className += " dropdownActive";
+  } else {
+    x.className = "dropdown";
+  }
+}

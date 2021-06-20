@@ -15,7 +15,7 @@ body {
     font-size: 2.2vh;
     font-weight: 300;
     text-align: justify;
-    background-color: #232C33;
+    background: linear-gradient(210deg,#2f393f,#232C33);
     color: #CED3DC;
 }
 
@@ -53,6 +53,11 @@ nav a {
 
 nav a:hover{
     color: #6290C3;
+    text-decoration: none;
+}
+
+.dropdown a {
+    display: none;
 }
 
 a {
@@ -64,6 +69,7 @@ a {
 
 a:hover {
     color: #CED3DC;
+    text-decoration: none;
 }
 
 section {
@@ -71,6 +77,12 @@ section {
     min-height: 100vh;
     height: auto;
     padding-top: 9vh;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    right: 1vw;
 }
 
 .about {
@@ -177,8 +189,17 @@ section {
     margin: 2px;
 }
 
-@media (max-width: 60vh) {
+@media (max-width: 125vh) {
+
+    .projects img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50vh;
+        max-width: 90vw;
+        float: none;
+    }
     .ptext {
+        margin: auto;
         text-align: center;
         float: none;
     }
@@ -186,5 +207,27 @@ section {
     .plinks {
         float: none;
         margin: auto;
+    }
+}
+
+@media (max-width: 72vh) {
+    nav a {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .dropdown {
+        position: fixed;
+        z-index: 14;
+        top: 6.5vh;
+        width: 100vw;
+        background: #232C33;
+    }
+
+    .dropdownActive a {
+        display: block;
     }
 }
