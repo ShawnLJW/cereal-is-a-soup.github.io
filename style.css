@@ -68,7 +68,6 @@ header h1 { color: #df4e53; }
 a {
     font-size: 30px;
     color: #6290C3;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -88,6 +87,43 @@ section {
     position: fixed;
     right: 1vw;
     display: none;
+}
+
+/* My "works of art". */
+.ptext {
+    text-align: right;
+}
+
+.pdesc {
+    padding: 12px;
+    background-color: #181e24;
+}
+
+.plinks {
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+    width: 30vh;
+}
+
+@media (max-width: 767.98px) {
+    .ptext { text-align: center; }
+    .plinks {
+        float: none;
+        margin: auto;
+    }
+}
+
+.bottom-gap { margin-bottom: 4vh; }
+
+/* My education experience. */
+.education {
+    padding: 2vh 1vw;
+    background-color: #181e24;
+}
+
+.education p {
+    margin: .2em;
 }
 
 /* About Page */
@@ -143,92 +179,3 @@ section {
 
 .dot:hover,
 .dot-active { background-color: #67686b; }
-
-/* My "works of art". */
-.ptext {
-    text-align: right;
-}
-
-.pdesc {
-    padding: 12px;
-    background-color: #181e24;
-}
-
-.plinks {
-    display: flex;
-    justify-content: space-evenly;
-    float: right;
-    width: 30vh;
-}
-
-@media (max-width: 767.98px) {
-    .ptext { text-align: center; }
-    .plinks {
-        float: none;
-        margin: auto;
-    }
-}
-
-.bottom-gap { margin-bottom: 4vh; }
-/*
-.projects {
-    position: relative;
-    width: 120vh;
-    max-width: 94vw;
-    margin:  0 auto 4vh auto;
-    overflow: auto;
-}
-
-.projects img {
-    position: relative;
-    float: left;
-    max-width: 90vw;
-}
-
-.ptext {
-    float: right;
-    width: 50vh;
-    max-width: 90vw;
-    text-align: right;
-}
-
-.plinks {
-    display: flex;
-    justify-content: space-evenly;
-    width: 30vh;
-}
-
-@media (max-width: 125vh) {
-
-    .projects img {
-        left: 50%;
-        transform: translateX(-50%);
-        float: none;
-        width: 50vh;
-        max-width: 90vw;
-    }
-    .ptext {
-        float: none;
-        margin: auto;
-        text-align: center;
-    }
-
-    .plinks {
-        float: none;
-        margin: auto;
-    }
-} */
-
-/* My education experience. */
-.school {
-    width: 90vh;
-    max-width: 85vw;
-    margin: auto;
-}
-
-.cwss {
-    padding: 5% 4%;
-    background-color: #181e24;
-}
-
-.cwss > * { margin: 2px; }

@@ -8,6 +8,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -17,7 +18,7 @@
             <div class="hero-inner">
                 <p>HI, I'M SHAWN,</p>
                 <h1>the student of your choice. (hopefully)</h1>
-                <a href="#about" class="learn" onclick="activate(0)">FIND OUT MORE</a>
+                <a href="#projects" class="learn" onclick="activate(0)">FIND OUT MORE</a>
             </div>
         </section>
 
@@ -30,17 +31,99 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" onclick="activate(0)">ABOUT</a>
+                        <a class="nav-link" href="#projects" onclick="activate(0)">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects" onclick="activate(1)">PROJECTS</a>
+                        <a class="nav-link" href="#education" onclick="activate(1)">EDUCATION</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education" onclick="activate(2)">EDUCATION</a>
+                        <a class="nav-link" href="#about" onclick="activate(2)">ABOUT</a>
                     </li>
                 </ul>
             </div>
         </header>
+
+        <!-- My "works of art". -->
+        <section id="projects">
+            <div class="container">
+                <h1 class="row">My "works of art".</h1>
+                <div class="row bottom-gap">
+                    <a class="col-md" href="https://github.com/cereal-is-a-soup/Survey-Response-Processing"><img class="w-100" src="project1.png"></a>
+                    <div class="col ptext">
+                        <strong><a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Natural Language Survey Processing</a></strong>
+                        <p class="pdesc text-justify">Where do students aspire to progress to for post-secondary education? This app can predict the answer from their survey responses.</p>
+                        <p>Numpy, Pandas, Matplotlib, Seaborn, nltk, scikit-learn</p>
+                        <div class="plinks">
+                            <a href="https://github.com/cereal-is-a-soup/Survey-Response-Processing"><i class="devicon-github-original"></i></a>
+                            <a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Try App</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="col-md" href="https://github.com/cereal-is-a-soup/Survey-Response-Processing"><img class="w-100" src="project2.png"></a>
+                    <div class="col ptext">
+                        <strong><a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py" title="Github Repo">Minimax Chess Engine</a></strong>
+                        <p class="pdesc text-justify">Improve your chess by playing against this engine. Remember me when you defeat Magnus Carlsen.</p>
+                        <p>python-chess, pygame</p>
+                        <div class="plinks">
+                            <a href="https://github.com/cereal-is-a-soup/Survey-Response-Processing" title="Github Repo"><i class="devicon-github-original"></i></a>
+                            <a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Try App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My education experience. -->
+        <section id="education">
+            <div class="container w-75">
+                <h1 class="row">My education experience.</h1>
+                <div class="row education bottom-gap">
+                    <div class="col-sm">
+                        <strong>2018 - Present</strong>
+                        <p>Commonwealth Secondary School</p>
+                    </div>
+                    <div class="col">
+                        <p>Express Stream</p>
+                        <p>ELR2B2: 6</p>
+                        <p>Subject combination: Computing, Math, A-Math, Physics, Chemistry, English, Chinese, Humanities</p>
+                    </div>
+                </div>
+                <div class="row education">
+                    <div class="col-sm">
+                        <a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup.github.io/main/EdusaveScholarship.jpg" title="View certificate."><strong>Edusave Scholarship 2020</strong></a>
+                    </div>
+                    <div class="col">
+                        <p>Top 10% in academic performance.</p>
+                    </div>
+                </div>
+                <div class="row education">
+                    <div class="col-sm">
+                        <a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup.github.io/main/EAGLES.jpg" title="View certificate."><strong>EAGLES 2020</strong></a>
+                    </div>
+                    <div class="col">
+                        <p>Excellent leadership qualities and service to community.</p>
+                    </div>
+                </div>
+                <div class="row education bottom-gap">
+                    <div class="col-sm">
+                        <a href="https://raw.githubusercontent.com/cereal-is-a-soup/cereal-is-a-soup.github.io/main/CWSS_Achievement.jpg" title="View certificate."><strong>CWSS Academic Awards</strong></a>
+                    </div>
+                    <div class="col">
+                        <p>Academic recognition by the school.</p>
+                    </div>
+                </div>
+                <div class="row education">
+                    <div class="col-sm">
+                        <strong>2018 - 2021</strong>
+                        <p>CCA: New Media Club</p>
+                    </div>
+                    <div class="col">
+                        <p>Logistics IC (2019 - 2021)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- About Page -->
         <section id="about">
@@ -68,47 +151,6 @@
                 <a class="dot" onclick="go_to(1)"></a>
                 <a class="dot" onclick="go_to(2)"></a>
                 <a class="dot" onclick="go_to(3)"></a>
-            </div>
-        </section>
-
-        <!-- My "works of art". -->
-        <section id="projects">
-            <div class="container">
-                <div class="row bottom-gap">
-                    <a class="col-md" href="https://github.com/cereal-is-a-soup/Survey-Response-Processing"><img class="w-100" src="project1.png"></a>
-                    <div class="col ptext">
-                        <strong><a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Natural Language Survey Processing</a></strong>
-                        <p class="pdesc text-justify">Where do students aspire to progress to for post-secondary education? This app can predict the answer from their survey responses.</p>
-                        <p>Numpy, Pandas, Matplotlib, Seaborn, nltk, scikit-learn</p>
-                        <div class="plinks">
-                            <a href="https://github.com/cereal-is-a-soup/Survey-Response-Processing">GitHub</a>
-                            <a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Try App</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <a class="col-md" href="https://github.com/cereal-is-a-soup/Survey-Response-Processing"><img class="w-100" src="project2.png"></a>
-                    <div class="col ptext">
-                        <strong><a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Minimax Chess Engine</a></strong>
-                        <p class="pdesc text-justify">Improve your chess by playing against this engine. Remember me when you defeat Magnus Carlsen.</p>
-                        <p>python-chess, pygame</p>
-                        <div class="plinks">
-                            <a href="https://github.com/cereal-is-a-soup/Survey-Response-Processing">GitHub</a>
-                            <a href="https://share.streamlit.io/cereal-is-a-soup/response_streamlit/main/frontend.py">Try App</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- My education experience. -->
-        <section id="education">
-            <div class="school">
-                <h1>My education experience.</h1>
-                <div class="cwss">
-                    <strong>2018 - Present</strong>
-                    <p>Commonwealth Secondary School</p>
-                </div>
             </div>
         </section>
 
