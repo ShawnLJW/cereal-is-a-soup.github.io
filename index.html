@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="showSlides()">
+    <body>
         <!-- Hero Page -->
         <section class="hero">
             <div class="hero-inner">
@@ -133,24 +133,26 @@
                 <p>I want to be someone people look for when problems appear, someone who can make a difference. Data science and artificial intelligence are my tools to accomplish this.</p>
                 <p>Coding was something I started at a young age, when my father taught me simple scripting languages like lua. Since then, I have been interested in practical applications of technology. Now I mainly use python for managing data and building machine learning models.</p>
             </div>
-            <div class="testimonials text-justify">
-                <div class="slides absolute">
-                    <p>"I really like the fact that he does not conform. He is bold and likes to challenge the status quo. Thus he comes up with solutions no one will think of."</p>
-                    <p class="quoted">-COLIN WANG<br>CLASSMATE</p>
+            <div class="carousel slide quotes text-justify" id="testimonials" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#testimonials" data-slide-to="0"></li>
+                    <li data-target="#testimonials" data-slide-to="1"></li>
+                    <li data-target="#testimonials" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>"He has demonstrated flexibility and determination by exploring different and advanced coding techniques... Having good learning ethics, he continually sought for improvements in his project and made changes readily."</p>
+                        <p class="quoted">-CHRISTOPHER SIM<br>COMPUTING TEACHER</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"I really like the fact that he does not conform. He is bold and likes to challenge the status quo. Thus he comes up with solutions no one will think of."</p>
+                        <p class="quoted">-COLIN WANG<br>CLASSMATE</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>"Not completely useless."</p>
+                        <p class="quoted">-MY MOTHER</p>
+                    </div>
                 </div>
-                <div class="slides absolute">
-                    <p>"Not completely useless."</p>
-                    <p class="quoted">-MY MOTHER</p>
-                </div>
-                <div class="slides">
-                    <p>"He has demonstrated flexibility and determination by exploring different and advanced coding techniques... Having good learning ethics, he continually sought for improvements in his project and made changes readily."</p>
-                    <p class="quoted">-CHRISTOPHER SIM<br>COMPUTING TEACHER</p>
-                </div>
-            </div>
-            <div class="dots">
-                <a class="dot" onclick="go_to(1)"></a>
-                <a class="dot" onclick="go_to(2)"></a>
-                <a class="dot" onclick="go_to(3)"></a>
             </div>
         </section>
 
