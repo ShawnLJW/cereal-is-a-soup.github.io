@@ -127,6 +127,10 @@ section {
 }
 
 /* About Page */
+#about {
+    min-height: 87vh;
+}
+
 .about {
     width: 95vh;
     max-width: 95vw;
@@ -138,7 +142,7 @@ section {
 .quotes {
     width: 70vh;
     max-width: 90vw;
-    height: 30vh;
+    height: 27vh;
     margin: 5vh auto;
 }
 
@@ -149,4 +153,12 @@ section {
 .quoted {
     color: #6290C3;
     text-align: right;
+}
+
+/* Footer */
+footer {
+    width: 13em;
+    height: 6vh;
+    margin: auto;
+    text-align: center;
 }
