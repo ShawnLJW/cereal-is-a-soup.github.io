@@ -106,11 +106,32 @@ section {
     width: 30vh;
 }
 
+.sub-head {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.sub-project {
+    margin: 3vh .5vw;
+    padding: 0;
+    background-color: #181e24;
+}
+
+.sub-desc {
+    margin: 1vh 2vw;
+}
+
 @media (max-width: 767.98px) {
     .ptext { text-align: center; }
     .plinks {
         float: none;
         margin: auto;
+    }
+
+    .sub-project {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60vw;
     }
 }
 
@@ -118,7 +139,7 @@ section {
 
 /* My education experience. */
 .education {
-    padding: 2vh 1vw;
+    padding: 1vw;
     background-color: #181e24;
 }
 
@@ -157,8 +178,7 @@ section {
 
 /* Footer */
 footer {
-    width: 13em;
     height: 6vh;
-    margin: auto;
+    background-color: #181e24;
     text-align: center;
 }
