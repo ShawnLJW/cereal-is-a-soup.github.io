@@ -82,12 +82,6 @@ section {
     padding-top: 10vh;
 }
 
-.burger {
-    position: fixed;
-    right: 1vw;
-    display: none;
-}
-
 /* My "works of art". */
 .ptext {
     text-align: right;
@@ -166,7 +160,7 @@ section {
 .quotes {
     width: 70vh;
     max-width: 90vw;
-    height: 27vh;
+    height: 25vh;
     margin: 5vh auto;
 }
 
