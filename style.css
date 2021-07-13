@@ -101,6 +101,7 @@ section {
     justify-content: space-evenly;
     float: right;
     width: 30vh;
+    font-size: 4vh;
 }
 
 .sub-head {
